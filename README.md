@@ -3,7 +3,7 @@
 This is the MAGMA code used to compute the 3-torsion subgroups of the modular Jacobian J0(40), as described in https://arxiv.org/abs/2210.02225v2.
 
 
-This directory contains 5 files:
+This directory contains 6 files:
 
 X040Scheme.m - this is the MAGMA code used to derive the equations whose solutions correspond to 3-torsion points 
 X040Approx.m - the some approximate solutions required to compute the 3-torsion subgroup - these are computed in Julia, using the package HomotopyContinuation.jl
