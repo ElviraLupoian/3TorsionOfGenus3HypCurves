@@ -127,7 +127,7 @@ nums := [ 6 - valinds[i] : i in [1..4] ];
 
 dens := [ 24/(#G0), 24/(#G1), 24/(#G2), 24/(#G3) ];
 
-summ := [ nums[i]/dens[i] : i in [1..4] ];
+summ := [ nums[i]/dens[i] : i in [2..4] ];
 
 print "the wild conductor exponent of X0(40)  at 2 is";
 &+summ ;
