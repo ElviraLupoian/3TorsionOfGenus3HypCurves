@@ -141,6 +141,7 @@ c9 := MonomialCoefficient(s9, v) ;
 s9 := s9 - c9*v ;
 s9 := (-1/c9)*s9;
 
+// we verify that the correctness of our solutions by substitution 
 Evs := [ [a] cat [ Evaluate(e,[a,1]) :e in [s1,s2,s3,s4,s5,s6]] cat [1] cat [ Evaluate(e,[a,1]) : e in [s8,s9]] : a in RR];
 
 Evs2 := [ [Evaluate(e,rr) : e in CE]  : rr in Evs] ;
@@ -224,6 +225,7 @@ Sp := SplittingField(t) ;
 RR := Roots(t,Sp) ;
 RR := [ a[1] : a in RR];
 
+// we verify that the correctness of our solutions by substitution 
 
 Evs := [ [a] cat [-1, Evaluate(s2, [a,1]), 3, Evaluate(s4, [a,1]), 1, Evaluate(s6,[a,1]), -1,0, Evaluate(s9, [a,1])] : a in RR];
 
